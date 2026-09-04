@@ -38,7 +38,7 @@
 
 ```bash
 # 一行添加市场 + 安装插件
-/plugin marketplace add <owner>/wcs-plugins
+/plugin marketplace add peihongjun688/wcs-plugins
 /plugin install web-console-starter-full@wcs-plugins
 /plugin reload-plugins
 ```
