@@ -1,0 +1,72 @@
+/* ============================================================
+   web-console-starter · 皮肤：deep-blue（默认）
+   深蓝玻璃拟态 —— 从源系统（运维监控中心）风格提取
+   换肤只需切换此文件内的 CSS 变量；组件/布局零改动
+   ============================================================ */
+
+/* 该皮肤为默认皮肤：变量直接定义在 :root（供其他深色皮肤作为兜底） */
+:root {
+  color-scheme: dark;
+
+  /* ---- 明暗模式（main.js 据此决定 Element Plus dark class）---- */
+  --app-mode: dark;
+
+  /* ---- 基础背景 ---- */
+  --bg-0: #0a1124;
+  --bg-1: #0b1f3a;
+
+  /* ---- 面板 ---- */
+  --panel: rgba(255, 255, 255, 0.05);
+  --panel-bd: rgba(255, 255, 255, 0.09);
+  --panel-solid: #0e1d38;          /* 对话框/抽屉等不透明面板 */
+
+  /* ---- 布局面（侧栏/顶栏半透明叠层）---- */
+  --side-bg: rgba(8, 14, 30, 0.55);
+  --top-bg: rgba(8, 14, 30, 0.35);
+
+  /* ---- 文本 ---- */
+  --txt: #cfe3ff;
+  --txt-dim: #9fb6d6;
+  --txt-strong: #eaf2ff;
+
+  /* ---- 主题色（渐变主色 + 强调色）---- */
+  --accent: #22d3ee;
+  --accent2: #a78bfa;
+
+  /* ---- 文字/按钮置于 accent 渐变上的颜色 ---- */
+  --logo-fg: #06121f;
+  --btn-fg: #06121f;
+
+  /* ---- 交互态 ---- */
+  --menu-active-bg: rgba(34, 211, 238, 0.14);
+  --menu-active-txt: #22d3ee;
+  --hover-bg: rgba(120, 200, 255, 0.08);
+
+  /* ---- 控件 ---- */
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-bd: rgba(255, 255, 255, 0.14);
+
+  /* ---- 细分隔线 / 环轨底色 ---- */
+  --line: rgba(255, 255, 255, 0.08);
+  --track: rgba(255, 255, 255, 0.07);
+
+  /* ---- 图表 10 色盘（与 app.theme.js 读取的变量一致）---- */
+  --chart-1: #22d3ee;  --chart-2: #a78bfa;  --chart-3: #f472b6;  --chart-4: #fbbf24;  --chart-5: #34d399;
+  --chart-6: #60a5fa;  --chart-7: #fb7185;  --chart-8: #facc15;  --chart-9: #4ade80;  --chart-10: #c084fc;
+}
+
+/* 背景渐变（深蓝底 + 青/紫辉光） */
+html:not([data-skin]) body,
+html[data-skin="deep-blue"] body {
+  background:
+    radial-gradient(1200px 800px at 18% -10%, #123a63 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, #2a1a52 0%, transparent 50%),
+    linear-gradient(135deg, #0b1f3a 0%, #0a1124 100%);
+  background-attachment: fixed;
+}
+
+/* 面板悬浮发光（深色皮肤的增强质感） */
+html:not([data-skin]) .panel:hover,
+html[data-skin="deep-blue"] .panel:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}

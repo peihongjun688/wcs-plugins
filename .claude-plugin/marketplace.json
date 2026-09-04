@@ -1,0 +1,15 @@
+{
+  "name": "wcs-plugins",
+  "owner": {
+    "name": "jun-ge",
+    "email": "jun-ge@local"
+  },
+  "plugins": [
+    {
+      "name": "web-console-starter-full",
+      "source": "./plugins/web-console-starter-full",
+      "description": "多皮肤中后台 Web 系统脚手架（Vue3 + ElementPlus + ECharts + Express + SQLite + H5 移动端），含 4 套桌面皮肤、6 套 H5 皮肤、5 类双形态页面模板、一键打包发布。",
+      "version": "1.2.1"
+    }
+  ]
+}

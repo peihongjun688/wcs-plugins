@@ -1,0 +1,59 @@
+/* ============================================================
+   web-console-starter · 皮肤：light-pro
+   浅色专业白 —— 办公/信息管理类系统
+   通过覆盖 :root 变量实现换肤，组件/布局零改动
+   ============================================================ */
+html[data-skin="light-pro"] {
+  color-scheme: light;
+
+  --app-mode: light;
+
+  --bg-0: #eef2f7;
+  --bg-1: #f7f9fc;
+
+  --panel: rgba(255, 255, 255, 0.85);
+  --panel-bd: rgba(15, 42, 88, 0.12);
+  --panel-solid: #ffffff;
+
+  --side-bg: rgba(255, 255, 255, 0.62);
+  --top-bg: rgba(255, 255, 255, 0.55);
+
+  --txt: #1c2c4a;
+  --txt-dim: #64748b;
+  --txt-strong: #0f1e3a;
+
+  --accent: #185FA5;
+  --accent2: #534AB7;
+
+  --logo-fg: #ffffff;
+  --btn-fg: #ffffff;
+
+  --menu-active-bg: rgba(24, 95, 165, 0.10);
+  --menu-active-txt: #185FA5;
+  --hover-bg: rgba(24, 95, 165, 0.06);
+
+  --input-bg: #ffffff;
+  --input-bd: rgba(15, 42, 88, 0.22);
+
+  --line: rgba(15, 42, 88, 0.10);
+  --track: rgba(15, 42, 88, 0.08);
+
+  --chart-1: #185FA5;  --chart-2: #534AB7;  --chart-3: #D4537E;  --chart-4: #BA7517;  --chart-5: #1D9E75;
+  --chart-6: #378ADD;  --chart-7: #E24B4A;  --chart-8: #EF9F27;  --chart-9: #639922;  --chart-10: #7F77DD;
+}
+
+html[data-skin="light-pro"] body {
+  background:
+    radial-gradient(1200px 800px at 18% -10%, #dbe7f6 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, #e6e2f8 0%, transparent 50%),
+    linear-gradient(135deg, #f7f9fc 0%, #eef2f7 100%);
+  background-attachment: fixed;
+}
+
+/* 浅色皮肤：减弱阴影、面板描边清晰 */
+html[data-skin="light-pro"] .panel {
+  box-shadow: 0 4px 16px rgba(15, 42, 88, 0.08);
+}
+html[data-skin="light-pro"] .panel:hover {
+  box-shadow: 0 8px 24px rgba(15, 42, 88, 0.14);
+}

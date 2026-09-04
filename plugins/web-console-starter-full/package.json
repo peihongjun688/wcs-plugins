@@ -1,0 +1,7 @@
+{
+  "name": "web-console-starter",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "description": "web-console-starter 根（仅声明 app.config.js 为 ESM；frontend/backend 各自独立 package.json）"
+}

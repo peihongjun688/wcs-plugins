@@ -1,0 +1,54 @@
+/* ============================================================
+   web-console-starter · 皮肤：royal-purple
+   紫金玻璃 —— 门户/展示/旗舰类系统
+   ============================================================ */
+html[data-skin="royal-purple"] {
+  color-scheme: dark;
+
+  --app-mode: dark;
+
+  --bg-0: #0d0822;
+  --bg-1: #1b1040;
+
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-bd: rgba(255, 255, 255, 0.10);
+  --panel-solid: #1c1245;
+
+  --side-bg: rgba(13, 7, 32, 0.55);
+  --top-bg: rgba(13, 7, 32, 0.35);
+
+  --txt: #e2d6ff;
+  --txt-dim: #ab97d8;
+  --txt-strong: #f3ecff;
+
+  --accent: #a78bfa;
+  --accent2: #fbbf24;
+
+  --logo-fg: #170d33;
+  --btn-fg: #170d33;
+
+  --menu-active-bg: rgba(167, 139, 250, 0.16);
+  --menu-active-txt: #c4b5fd;
+  --hover-bg: rgba(167, 139, 250, 0.10);
+
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-bd: rgba(255, 255, 255, 0.16);
+
+  --line: rgba(255, 255, 255, 0.09);
+  --track: rgba(255, 255, 255, 0.07);
+
+  --chart-1: #a78bfa;  --chart-2: #fbbf24;  --chart-3: #f472b6;  --chart-4: #22d3ee;  --chart-5: #34d399;
+  --chart-6: #60a5fa;  --chart-7: #facc15;  --chart-8: #fb7185;  --chart-9: #4ade80;  --chart-10: #c084fc;
+}
+
+html[data-skin="royal-purple"] body {
+  background:
+    radial-gradient(1200px 800px at 18% -10%, #3a2370 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, #6b4a1a 0%, transparent 45%),
+    linear-gradient(135deg, #1b1040 0%, #0d0822 100%);
+  background-attachment: fixed;
+}
+
+html[data-skin="royal-purple"] .panel:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}

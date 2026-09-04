@@ -1,0 +1,54 @@
+/* ============================================================
+   web-console-starter · 皮肤：emerald-dark
+   墨绿玻璃 —— 制造/生产类系统
+   ============================================================ */
+html[data-skin="emerald-dark"] {
+  color-scheme: dark;
+
+  --app-mode: dark;
+
+  --bg-0: #04120d;
+  --bg-1: #07251a;
+
+  --panel: rgba(255, 255, 255, 0.05);
+  --panel-bd: rgba(255, 255, 255, 0.09);
+  --panel-solid: #07251a;
+
+  --side-bg: rgba(3, 16, 11, 0.55);
+  --top-bg: rgba(3, 16, 11, 0.35);
+
+  --txt: #c8eedd;
+  --txt-dim: #7fb6a0;
+  --txt-strong: #e7fff4;
+
+  --accent: #34d399;
+  --accent2: #5eead4;
+
+  --logo-fg: #03231a;
+  --btn-fg: #03231a;
+
+  --menu-active-bg: rgba(52, 211, 153, 0.14);
+  --menu-active-txt: #34d399;
+  --hover-bg: rgba(94, 234, 212, 0.08);
+
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-bd: rgba(255, 255, 255, 0.14);
+
+  --line: rgba(255, 255, 255, 0.08);
+  --track: rgba(255, 255, 255, 0.07);
+
+  --chart-1: #34d399;  --chart-2: #5eead4;  --chart-3: #fbbf24;  --chart-4: #60a5fa;  --chart-5: #f472b6;
+  --chart-6: #4ade80;  --chart-7: #facc15;  --chart-8: #a78bfa;  --chart-9: #fb7185;  --chart-10: #22d3ee;
+}
+
+html[data-skin="emerald-dark"] body {
+  background:
+    radial-gradient(1200px 800px at 18% -10%, #0b3a2a 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, #123a63 0%, transparent 50%),
+    linear-gradient(135deg, #07251a 0%, #04120d 100%);
+  background-attachment: fixed;
+}
+
+html[data-skin="emerald-dark"] .panel:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}

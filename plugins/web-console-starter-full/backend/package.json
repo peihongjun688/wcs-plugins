@@ -1,0 +1,22 @@
+{
+  "name": "web-console-starter-backend",
+  "version": "1.2.1",
+  "private": true,
+  "description": "web-console-starter 后端底座（Express + node:sqlite）— 含 auth / modules 示范 CRUD / settings / health",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "init-db": "node src/db.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

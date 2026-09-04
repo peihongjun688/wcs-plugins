@@ -1,0 +1,144 @@
+/* ============================================================
+   web-console-starter · H5 视觉规范 v2.0 主题
+   ------------------------------------------------------------
+   6 套 H5 专属皮肤（4 深色玻璃 + 2 浅色），与桌面 v1.0 主题
+   （themes/deep-blue.css 等）完全解耦。H5 token 全部以 --v2-*
+   前缀，避免与桌面 --txt/--accent/--panel-* 冲突。
+   切换方式：<html data-h5-skin="deep-blue-glass">，
+   详见 docs/H5视觉规范v2.0.md。
+   ============================================================ */
+
+/* ---- 默认（深蓝玻璃，main.js 会在 ≤768px 视口首次加载时设置） ---- */
+:root {
+  /* 主色 + 5 色强调（与规范稿完全对齐） */
+  --v2-primary: #4F8AFF;
+  --v2-accent-1: #2BD4D4;
+  --v2-accent-2: #B968F0;
+  --v2-accent-3: #FF5C5C;
+  --v2-accent-4: #FF7A45;
+  --v2-accent-5: #2BD89B;
+
+  /* 玻璃与底色（深色玻璃风） */
+  --v2-bg-deep: radial-gradient(1200px 800px at 18% -10%, #1A3466 0%, transparent 55%),
+                radial-gradient(1000px 700px at 100% 0%, #2A1A52 0%, transparent 50%),
+                linear-gradient(135deg, #0B1F3A 0%, #0A1124 100%);
+  --v2-glass-bg: rgba(15, 28, 48, 0.62);
+  --v2-glass-border: rgba(255, 255, 255, 0.10);
+
+  /* 文本 */
+  --v2-text-1: rgba(234, 242, 255, 0.92);
+  --v2-text-2: rgba(207, 227, 255, 0.72);
+  --v2-text-3: rgba(159, 182, 214, 0.50);
+
+  /* 状态色 */
+  --v2-success: #2BD89B;
+  --v2-warning: #FF7A45;
+  --v2-danger: #FF5C5C;
+
+  /* 阴影 */
+  --v2-shadow-card: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --v2-shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --v2-shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.28);
+  --v2-shadow-tabbar: 0 -4px 16px rgba(0, 0, 0, 0.20);
+
+  /* 圆角 / 间距 */
+  --v2-r-xs: 4px;
+  --v2-r-sm: 8px;
+  --v2-r-md: 12px;
+  --v2-r-lg: 16px;
+  --v2-r-xl: 24px;
+  --v2-r-pill: 999px;
+}
+
+/* ---- 4 套深色玻璃 ---- */
+html[data-h5-skin="deep-blue-glass"],
+:root {
+  --v2-primary: #4F8AFF;
+  --v2-accent-1: #2BD4D4;
+  --v2-accent-2: #B968F0;
+  --v2-accent-3: #FF5C5C;
+  --v2-accent-4: #FF7A45;
+  --v2-accent-5: #2BD89B;
+  --v2-bg-deep: radial-gradient(1200px 800px at 18% -10%, #1A3466 0%, transparent 55%),
+                radial-gradient(1000px 700px at 100% 0%, #2A1A52 0%, transparent 50%),
+                linear-gradient(135deg, #0B1F3A 0%, #0A1124 100%);
+  --v2-glass-bg: rgba(15, 28, 48, 0.62);
+  --v2-glass-border: rgba(255, 255, 255, 0.10);
+}
+
+html[data-h5-skin="emerald-glass"] {
+  --v2-primary: #2BD89B;
+  --v2-accent-1: #2BD4D4;
+  --v2-accent-2: #B968F0;
+  --v2-accent-3: #FF5C5C;
+  --v2-accent-4: #FF7A45;
+  --v2-accent-5: #FFC53D;
+  --v2-bg-deep: radial-gradient(1200px 800px at 18% -10%, #0E4E3C 0%, transparent 55%),
+                radial-gradient(1000px 700px at 100% 0%, #1F3A2A 0%, transparent 50%),
+                linear-gradient(135deg, #081E1C 0%, #04110F 100%);
+  --v2-glass-bg: rgba(8, 30, 28, 0.62);
+  --v2-glass-border: rgba(255, 255, 255, 0.10);
+}
+
+html[data-h5-skin="royal-purple"] {
+  --v2-primary: #B968F0;
+  --v2-accent-1: #2BD4D4;
+  --v2-accent-2: #FF7A45;
+  --v2-accent-3: #FFD53D;
+  --v2-accent-4: #2BD89B;
+  --v2-accent-5: #FF5C5C;
+  --v2-bg-deep: radial-gradient(1200px 800px at 18% -10%, #3D1E66 0%, transparent 55%),
+                radial-gradient(1000px 700px at 100% 0%, #1A0E40 0%, transparent 50%),
+                linear-gradient(135deg, #160E2A 0%, #0A0617 100%);
+  --v2-glass-bg: rgba(22, 14, 42, 0.62);
+  --v2-glass-border: rgba(255, 255, 255, 0.10);
+}
+
+html[data-h5-skin="ice-blue"] {
+  --v2-primary: #5BB8FF;
+  --v2-accent-1: #B968F0;
+  --v2-accent-2: #2BD89B;
+  --v2-accent-3: #FF7AA8;
+  --v2-accent-4: #FF7A45;
+  --v2-accent-5: #FFD53D;
+  --v2-bg-deep: radial-gradient(1200px 800px at 18% -10%, #1A4D7A 0%, transparent 55%),
+                radial-gradient(1000px 700px at 100% 0%, #2E3F66 0%, transparent 50%),
+                linear-gradient(135deg, #0A162A 0%, #050D1A 100%);
+  --v2-glass-bg: rgba(10, 22, 42, 0.62);
+  --v2-glass-border: rgba(255, 255, 255, 0.10);
+}
+
+/* ---- 2 套浅色 ---- */
+html[data-h5-skin="light-warm"] {
+  --v2-primary: #FF8A45;
+  --v2-accent-1: #4F8AFF;
+  --v2-accent-2: #2BD89B;
+  --v2-accent-3: #B968F0;
+  --v2-accent-4: #FFC53D;
+  --v2-accent-5: #FF5C5C;
+  --v2-bg-deep: linear-gradient(135deg, #FFFAF5 0%, #F5EDE0 100%);
+  --v2-glass-bg: rgba(255, 250, 245, 0.78);
+  --v2-glass-border: rgba(255, 138, 69, 0.18);
+  --v2-text-1: rgba(60, 35, 15, 0.92);
+  --v2-text-2: rgba(80, 55, 35, 0.72);
+  --v2-text-3: rgba(120, 95, 75, 0.55);
+  --v2-shadow-card: 0 4px 16px rgba(255, 138, 69, 0.10);
+  --v2-shadow-glass: 0 8px 32px rgba(255, 138, 69, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+html[data-h5-skin="light-fresh"] {
+  --v2-primary: #2BD89B;
+  --v2-accent-1: #4F8AFF;
+  --v2-accent-2: #FF7A45;
+  --v2-accent-3: #B968F0;
+  --v2-accent-4: #FFC53D;
+  --v2-accent-5: #FF5C5C;
+  --v2-bg-deep: linear-gradient(135deg, #F8FCFA 0%, #E8F5EC 100%);
+  --v2-glass-bg: rgba(248, 252, 250, 0.78);
+  --v2-glass-border: rgba(43, 216, 155, 0.20);
+  --v2-text-1: rgba(15, 50, 38, 0.92);
+  --v2-text-2: rgba(40, 75, 60, 0.72);
+  --v2-text-3: rgba(80, 120, 100, 0.55);
+  --v2-shadow-card: 0 4px 16px rgba(43, 216, 155, 0.10);
+  --v2-shadow-glass: 0 8px 32px rgba(43, 216, 155, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}

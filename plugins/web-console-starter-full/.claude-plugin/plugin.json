@@ -1,0 +1,30 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "web-console-starter-full",
+  "version": "1.2.1",
+  "description": "多皮肤中后台 Web 系统脚手架（Vue3 + ElementPlus + ECharts + Express + SQLite + H5 移动端）。用 wcs 模板搭建/扩展带多皮肤、桌面/H5 双形态的软件著作权演示系统。",
+  "author": {
+    "name": "jun-ge",
+    "email": "jun-ge@local"
+  },
+  "license": "MIT",
+  "keywords": [
+    "web-console-starter",
+    "wcs",
+    "脚手架",
+    "中后台",
+    "Vue3",
+    "ElementPlus",
+    "ECharts",
+    "Express",
+    "SQLite",
+    "多皮肤",
+    "H5",
+    "移动端",
+    "响应式",
+    "软件著作权"
+  ],
+  "skills": [
+    "./"
+  ]
+}
